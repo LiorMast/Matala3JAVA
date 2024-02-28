@@ -1,5 +1,7 @@
 package assignment_3.player;
 
+import assignment_3.instruments.UnknownInstrumentException;
+
 import javax.sound.midi.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -21,7 +23,7 @@ public class Player {
         instrumentToIx.put("Muted Trumpet", 59);
     }
 
-    public Player(String instrument) {
+    public Player(String instrument) throws UnknownInstrumentException {
         try {
             Synthesizer midiSynth = MidiSystem.getSynthesizer();
             midiSynth.open();
@@ -37,7 +39,7 @@ public class Player {
     }
 
 
-    public void playSound(SoundSet soundSet) {
+    public void playSound(SoundSet soundSet){
 
         int[] pitches = soundSet.getPitches();
         try {

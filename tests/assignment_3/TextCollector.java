@@ -18,7 +18,7 @@ public class TextCollector extends OutputStream {
     }
 
     public String collect() {
-        String res = buffer.toString();
+        String res = buffer.toString().replace("\r", "");
         buffer.setLength(0);
         return res;
     }

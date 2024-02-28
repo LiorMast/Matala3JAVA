@@ -288,7 +288,7 @@ class MusicTest {
             shiftedPiano.play(C4maj);
             piano.play(C4maj);
             shiftedPiano.play(C4maj);
-        } catch (TooManySoundsException | SoundException e) {
+        } catch (SoundException e) {
             fail(e);
         }
 
