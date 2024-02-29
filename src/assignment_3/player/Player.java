@@ -33,7 +33,7 @@ public class Player {
                 }
             }
             if (!exists){
-                throw new UnknownInstrumentException("Unknown instrument: "+instrument+".");
+                throw new UnknownInstrumentException(instrument);
             }
             Synthesizer midiSynth = MidiSystem.getSynthesizer();
             midiSynth.open();

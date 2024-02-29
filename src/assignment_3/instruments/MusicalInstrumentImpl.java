@@ -37,9 +37,14 @@ public abstract class MusicalInstrumentImpl implements MusicalInstrument {
 
     @Override
     public void play(SoundSet soundSet) throws TooManySoundsException ,SoundDurationException, PitchOutOfRangeException{
+        if(soundSet.getDuration()<0){throw new SoundDurationException(""+soundSet.getDuration());}
         if(soundSet.getPitches().length>this.nSimultaneousSounds)
         {
-            throw new TooManySoundsException(this.getName()+" can play at most "+getNSimultaneousSounds()+" simultaneous notes, cannot play a sound set with "+soundSet.getPitches().length+" notes!");
+            throw new TooManySoundsException(this.getName(),getNSimultaneousSounds(),soundSet.getPitches().length);
+        }
+        for(int pitch: soundSet.getPitches()){
+            if(pitch<0||pitch>127)
+                throw new PitchOutOfRangeException(""+pitch);
         }
         System.out.println("Playing " + soundSet.toString());
         player.playSound(soundSet);

@@ -14,7 +14,7 @@ public class TempoScaledMusicalInstrument extends MusicalInstrumentDecorator{
 
     @Override
     public void playSong(Song song) {
-        System.out.println("Playing " + song.getTitle() + " on " + musicalInstrument.toString());
+        System.out.println("Playing " + song.getTitle() + " on " + this.toString());
         song.reset();
 
         try {
