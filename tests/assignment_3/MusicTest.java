@@ -1,5 +1,8 @@
 package assignment_3;
 
+import assignment_3.instruments.decorators.ShiftedMusicalInstrument;
+import assignment_3.instruments.decorators.StaccatoMusicalInstrument;
+import assignment_3.instruments.decorators.TempoScaledMusicalInstrument;
 import assignment_3.instruments.*;
 import assignment_3.player.*;
 import org.junit.jupiter.api.*;
@@ -144,7 +147,7 @@ class MusicTest {
         tempoScaledPiano.playSong(littleJonathan);
 
         expected =
-                "Playing Little Jonathan on Piano\n" +
+                "Playing Little Jonathan on 0.5 tempo scaled Piano\n" +
                         "Playing Duration: 125ms, notes: G4\n" +
                         "Playing Duration: 125ms, notes: E4\n" +
                         "Playing Duration: 250ms, notes: E4\n" +
@@ -325,7 +328,7 @@ class MusicTest {
         tempoScaledShifted.playSong(littleJonathan);
 
         expected =
-                "Playing Little Jonathan on 5 shifted Piano\n" +
+                "Playing Little Jonathan on 0.4 tempo scaled 5 shifted Piano\n" +
                         "Playing Duration: 100ms, notes: C5\n" +
                         "Playing Duration: 100ms, notes: A4\n" +
                         "Playing Duration: 200ms, notes: A4\n" +
@@ -366,7 +369,7 @@ class MusicTest {
         staccatoTempoScaledShifted.playSong(littleJonathan);
 
         expected =
-                "Playing Little Jonathan on 5 shifted Piano with staccato\n" +
+                "Playing Little Jonathan on 0.8 tempo scaled 5 shifted Piano with staccato\n" +
                         "Playing Duration: 16ms, notes: C5\n" +
                         "Playing Duration: 184ms, notes: break\n" +
                         "Playing Duration: 16ms, notes: A4\n" +
@@ -480,7 +483,7 @@ class MusicTest {
         }
     }
 
-    private class Drums extends MusicalInstrument {
+    private class Drums extends MusicalInstrumentImpl {
         public Drums() throws UnknownInstrumentException {
             super("Drums", 4);
         }

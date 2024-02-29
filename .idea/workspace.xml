@@ -4,24 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ac4dcfa-dc68-4162-95ec-480a2bac413e" name="Changes" comment="started matala 3">
-      <change afterPath="$PROJECT_DIR$/src/assignment_3/instruments/UnknownInstrumentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment_3/player/PitchOutOfRangeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment_3/player/SoundDurationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment_3/player/SoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment_3/player/TooManySoundsException.java" afterDir="false" />
+    <list default="true" id="7ac4dcfa-dc68-4162-95ec-480a2bac413e" name="Changes" comment="saving before extracting interface">
+      <change afterPath="$PROJECT_DIR$/src/assignment_3/instruments/MusicalInstrumentImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment_3/instruments/decorators/MusicalInstrumentDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment_3/instruments/decorators/StaccatoMusicalInstrument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assignment_3/instruments/decorators/TempoScaledMusicalInstrument.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Matala3JAVA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Matala3JAVA.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignment_3/instruments/MusicalInstrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment_3/instruments/MusicalInstrument.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignment_3/instruments/Piano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment_3/instruments/Piano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment_3/player/PitchOutOfRangeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment_3/player/PitchOutOfRangeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignment_3/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment_3/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment_3/player/SongLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment_3/player/SongLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment_3/player/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment_3/player/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment_3/player/SoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment_3/player/SoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignment_3/player/SoundSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment_3/player/SoundSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/assignment_3/MusicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/assignment_3/MusicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/assignment_3/TextCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/assignment_3/TextCollector.java" afterDir="false" />
     </list>
-    <list id="db08d541-f0f2-4b3f-b252-ce8972407fde" name="Changes by Alony" comment="">
-      <change beforePath="$PROJECT_DIR$/src/assignment_3/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment_3/player/Player.java" afterDir="false" />
+    <list id="db08d541-f0f2-4b3f-b252-ce8972407fde" name="Changes by Alony" comment="Changes by Alony">
+      <change afterPath="$PROJECT_DIR$/src/assignment_3/instruments/decorators/ShiftedMusicalInstrument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/assignment_3/TextCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/assignment_3/TextCollector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,22 +31,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/assignment_3/player/Player.java">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="4" changelist="7ac4dcfa-dc68-4162-95ec-480a2bac413e" />
-        <range start1="23" end1="24" start2="25" end2="26" changelist="7ac4dcfa-dc68-4162-95ec-480a2bac413e" />
-        <range start1="25" end1="25" start2="27" end2="32" changelist="db08d541-f0f2-4b3f-b252-ce8972407fde" />
-        <range start1="39" end1="40" start2="46" end2="47" changelist="7ac4dcfa-dc68-4162-95ec-480a2bac413e" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -59,25 +50,126 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.MusicTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MusicTest.testDoubleDecorated.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MusicTest.testShifted.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MusicTest.testShiftedOutOfRange.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MusicTest.testShiftedRepeats.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MusicTest.testStaccato.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MusicTest.testTempoScaled.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="assignment_3.instruments" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="assignment_3.instruments" />
       <recent name="assignment_3.player" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MusicTest">
+    <configuration name="MusicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Matala3JAVA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignment_3" />
+      <option name="MAIN_CLASS_NAME" value="assignment_3.MusicTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicTest.testDoubleDecorated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Matala3JAVA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignment_3" />
+      <option name="MAIN_CLASS_NAME" value="assignment_3.MusicTest" />
+      <option name="METHOD_NAME" value="testDoubleDecorated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicTest.testShiftedOutOfRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Matala3JAVA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignment_3" />
+      <option name="MAIN_CLASS_NAME" value="assignment_3.MusicTest" />
+      <option name="METHOD_NAME" value="testShiftedOutOfRange" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicTest.testShiftedRepeats" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Matala3JAVA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignment_3" />
+      <option name="MAIN_CLASS_NAME" value="assignment_3.MusicTest" />
+      <option name="METHOD_NAME" value="testShiftedRepeats" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicTest.testTempoScaled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Matala3JAVA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignment_3" />
+      <option name="MAIN_CLASS_NAME" value="assignment_3.MusicTest" />
+      <option name="METHOD_NAME" value="testTempoScaled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MusicTest" />
+        <item itemvalue="JUnit.MusicTest.testDoubleDecorated" />
+        <item itemvalue="JUnit.MusicTest.testShiftedOutOfRange" />
+        <item itemvalue="JUnit.MusicTest.testTempoScaled" />
+        <item itemvalue="JUnit.MusicTest.testShiftedRepeats" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -103,12 +195,30 @@
       <option name="project" value="LOCAL" />
       <updated>1708965729190</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="saving before extracting interface">
+      <option name="closed" value="true" />
+      <created>1709138878993</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709138878993</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changes by Alony">
+      <option name="closed" value="true" />
+      <created>1709138907246</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709138907246</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="started matala 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="started matala 3" />
+    <MESSAGE value="saving before extracting interface" />
+    <MESSAGE value="Changes by Alony" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by Alony" />
   </component>
 </project>

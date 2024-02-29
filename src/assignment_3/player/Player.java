@@ -25,10 +25,15 @@ public class Player {
 
     public Player(String instrument) throws UnknownInstrumentException {
         try {
+            boolean exists = false;
             String[] check_inst = {"Piano", "Xylophone", "Electric Guitar", "Distortion Electric Guitar", "Trumpet", "Muted Trumpet"};
             for(String i : check_inst){
-                if(!i.equals(instrument))
-                    throw new UnknownInstrumentException("Unknown instrument: "+instrument);
+                if(i.equals(instrument)){
+                    exists = true;
+                }
+            }
+            if (!exists){
+                throw new UnknownInstrumentException("Unknown instrument: "+instrument+".");
             }
             Synthesizer midiSynth = MidiSystem.getSynthesizer();
             midiSynth.open();

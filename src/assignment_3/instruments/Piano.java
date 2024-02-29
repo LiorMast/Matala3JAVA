@@ -6,7 +6,7 @@ import assignment_3.player.TooManySoundsException;
 import assignment_3.player.SoundSet;
 
 
-public class Piano extends MusicalInstrument {
+public class Piano extends MusicalInstrumentImpl {
 
 
     public Piano() throws UnknownInstrumentException {

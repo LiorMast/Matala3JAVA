@@ -15,6 +15,10 @@ public class Song {
         return title;
     }
 
+    public SoundSet[] getSounds() {
+        return sounds;
+    }
+
     public SoundSet next() {
         SoundSet soundSet = sounds[next];
         next++;

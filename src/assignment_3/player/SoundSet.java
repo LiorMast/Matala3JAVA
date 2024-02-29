@@ -15,7 +15,7 @@ public class SoundSet {
         if(duration<0){throw new SoundDurationException("Sound duration must be nonnegative, got "+duration+"ms.");}
         for(int pitch:pitches){
             if(pitch<0||pitch>127)
-                throw new PitchOutOfRangeException("Invalid pitch. Pitch must be between 0 and 127,got "+pitch);
+                throw new PitchOutOfRangeException("Invalid pitch. Pitch value must be between 0 and 127, got "+pitch+".");
         }
         this.duration = duration;
         this.pitches = pitches;
@@ -30,7 +30,7 @@ public class SoundSet {
         }
         for(int pitch:pitches){
             if(pitch<0||pitch>127)
-                throw new PitchOutOfRangeException("Invalid pitch. Pitch must be between 0 and 127,got "+pitch);
+                throw new PitchOutOfRangeException("Invalid pitch. Pitch value must be between 0 and 127, got "+pitch+".");
         }
     }
 
